@@ -44,4 +44,22 @@ int main() {
 
         if (event == 0)
             std::cout << "benz performance calibration.\n";
-        else if (eve
+        else if (event == 1)
+            std::cout << "bmw handling optimization.\n";
+        else if (event == 2)
+            std::cout << "tesla energy efficiency boost.\n";
+        else
+            std::cout << "system recalibration in progress.\n";
+
+        showCarState(speed, stability);
+    }
+
+    std::cout << "\nRace Complete\n";
+
+    if (speed > stability)
+        std::cout << "Aggressive driving style wins.\n";
+    else
+        std::cout << "Balanced control achieved.\n";
+
+    return 0;
+}
